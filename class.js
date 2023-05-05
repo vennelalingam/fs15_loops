@@ -47,28 +47,28 @@
 
 // .random => gives a random number 
 // with every refresh
-function getRandomInt(max){
-    return Math.floor(Math.random() * max);
-}
-// console.log(getRandomInt(10));
+// function getRandomInt(max){
+//     return Math.floor(Math.random() * max);
+// }
+// // console.log(getRandomInt(10));
 
-let looping = true;
-while(looping){
-    const randomNumber = getRandomInt(10);
-    // console.log(randomNumber < 5 ? "tails" : "heads")
-    if (randomNumber < 5) {
-        console.log("tails")
-        looping = false;
-    }
-    else console.log("heads")
-}
+// let looping = true;
+// while(looping){
+//     const randomNumber = getRandomInt(10);
+//     // console.log(randomNumber < 5 ? "tails" : "heads")
+//     if (randomNumber < 5) {
+//         console.log("tails")
+//         looping = false;
+//     }
+//     else console.log("heads")
+// }
 
 // Do While Loop - Never use
 // do while loop runs atleast once and keeps 
 //checking the condition to loop or stop 
-let count = 1;
-do {
-    console.log(count);
-    count++;
-}
-while (count <= 5);
+// let count = 1;
+// do {
+//     console.log(count);
+//     count++;
+// }
+// while (count <= 5);
