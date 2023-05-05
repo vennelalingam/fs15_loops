@@ -21,7 +21,7 @@ Create a loop that counts
 up to 100.
 ------------------*/
 
-// for(x=1; x<=100; x++){
+// for(let x=1; x<=100; x++){
 //     console.log(x);
 // }
 
@@ -31,7 +31,7 @@ Create a loop that counts
 down from 100.
 ------------------*/
 
-// for(countDown = 100; countDown >=0; countDown--){
+// for(countDown = 100; countDown >= 0; countDown--){
 //     console.log(countDown)
 // }
 
@@ -76,11 +76,12 @@ time you iterate!
 
 // let evenSum = null;
 
-// for(let even = 1; even <= 50; even += 2 ){
+// for(let even = 0; even <= 50; even += 2 ){
 //     console.log("Even Numbers upto 50:", even)
 //     evenSum += even;
 // }
-// console.log(evenSum);
+// console.log(evenSum); // 650
+
 
 /*------------------
 7)
@@ -154,12 +155,12 @@ Good luck!
 
 // for(let printNum = 0; printNum <= 100; printNum++){
 //     // console.log(`Printing Numbers from 0 to 100: ${printNum}`);
-//     if (printNum % 3 === 0){
-//         console.log(`Fizz`)
+//     if  (printNum % 3 === 0 && printNum % 5 === 0){
+//         console.log(`FizzBuzz`)
 //     } else if (printNum % 5 === 0){
 //         console.log(`Buzz`)
-//     } else if (printNum % 3 === 0 && printNum % 5 === 0){
-//         console.log(`FizzBuzz`)
+//     } else if(printNum % 3 === 0){
+//         console.log(`Fizz`)
 //     } else 
 //         console.log(`${printNum}`)
 // }
@@ -171,15 +172,26 @@ a loop that makes five calls to console.log.
 
  *
  **
+ ***
  ****
- ********
- ****************
+ *****
 ------------------*/
 
-// let triangle = "*"
+let triangle = "*";
 
-// for (let star = 1; star <= 5; star++){
-//     console.log(triangle);
-//      triangle += `${triangle}`
-//     //   triangle = `${triangle} ${star} `
+for (let star = 1; star <= 5; star++){
+    console.log(triangle);
+    triangle += "*";
+}
+
+// for(let printStar= "*"; printStar.length < 6; printStar += "*") {
+//     console.log(printStar);
+// }
+
+// for(let i=1; i <= 5; i++) {
+//     console.log(Array(i + 1).join("*"));
+// }
+
+// for(let i=1; i <= 5; i++) {
+//     console.log("*".repeat(i));
 // }
